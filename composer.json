@@ -1,0 +1,44 @@
+{
+    "name": "sanwohq/laravel",
+    "description": "Sanwo payment SDK for Laravel — Blade components for Paystack, Flutterwave, Razorpay, Monnify, Interswitch, and custom providers.",
+    "type": "library",
+    "license": "Apache-2.0",
+    "keywords": ["laravel", "payments", "paystack", "flutterwave", "razorpay", "monnify", "interswitch", "sanwo"],
+    "homepage": "https://sanwohq.com",
+    "authors": [
+        {
+            "name": "SanwoHQ",
+            "email": "hello@sanwohq.com"
+        }
+    ],
+    "require": {
+        "php": "^8.1",
+        "illuminate/support": "^10.0|^11.0|^12.0"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^8.0|^9.0|^10.0",
+        "phpunit/phpunit": "^10.0|^11.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "SanwoHQ\\Laravel\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "SanwoHQ\\Laravel\\Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "SanwoHQ\\Laravel\\SanwoServiceProvider"
+            ],
+            "aliases": {
+                "Sanwo": "SanwoHQ\\Laravel\\Facades\\Sanwo"
+            }
+        }
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true
+}
