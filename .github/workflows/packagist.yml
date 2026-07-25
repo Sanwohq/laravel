@@ -14,5 +14,6 @@ jobs:
       - name: Notify Packagist
         run: |
           curl -s -X POST \
+            -H "Content-Type: application/json" \
             "https://packagist.org/api/update-package?username=Tryortho&apiToken=${{ secrets.PACKAGIST_API_TOKEN }}" \
             -d '{"repository":{"url":"https://github.com/Sanwohq/laravel"}}'
