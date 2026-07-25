@@ -1,6 +1,6 @@
 <?php
 
-namespace SanwoHQ\Laravel;
+namespace Sanwo\Laravel;
 
 use Illuminate\Support\ServiceProvider;
 
@@ -20,9 +20,9 @@ class SanwoServiceProvider extends ServiceProvider
         $this->loadViewsFrom(__DIR__ . '/../resources/views', 'sanwo');
 
         $this->loadViewComponentsAs('sanwo', [
-            'checkout' => \SanwoHQ\Laravel\View\Components\Checkout::class,
-            'custom-amount' => \SanwoHQ\Laravel\View\Components\CustomAmount::class,
-            'scripts' => \SanwoHQ\Laravel\View\Components\Scripts::class,
+            'checkout' => \Sanwo\Laravel\View\Components\Checkout::class,
+            'custom-amount' => \Sanwo\Laravel\View\Components\CustomAmount::class,
+            'scripts' => \Sanwo\Laravel\View\Components\Scripts::class,
         ]);
 
         if ($this->app->runningInConsole()) {

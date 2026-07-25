@@ -1,9 +1,9 @@
 <?php
 
-namespace SanwoHQ\Laravel\Facades;
+namespace Sanwo\Laravel\Facades;
 
 use Illuminate\Support\Facades\Facade;
-use SanwoHQ\Laravel\SanwoManager;
+use Sanwo\Laravel\SanwoManager;
 
 /**
  * @method static string provider()
@@ -12,7 +12,7 @@ use SanwoHQ\Laravel\SanwoManager;
  * @method static bool debug()
  * @method static string scriptUrl()
  *
- * @see \SanwoHQ\Laravel\SanwoManager
+ * @see \Sanwo\Laravel\SanwoManager
  */
 class Sanwo extends Facade
 {

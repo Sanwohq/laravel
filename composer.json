@@ -21,21 +21,21 @@
     },
     "autoload": {
         "psr-4": {
-            "SanwoHQ\\Laravel\\": "src/"
+            "Sanwo\\Laravel\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "SanwoHQ\\Laravel\\Tests\\": "tests/"
+            "Sanwo\\Laravel\\Tests\\": "tests/"
         }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "SanwoHQ\\Laravel\\SanwoServiceProvider"
+                "Sanwo\\Laravel\\SanwoServiceProvider"
             ],
             "aliases": {
-                "Sanwo": "SanwoHQ\\Laravel\\Facades\\Sanwo"
+                "Sanwo": "Sanwo\\Laravel\\Facades\\Sanwo"
             }
         }
     },

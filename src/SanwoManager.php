@@ -1,6 +1,6 @@
 <?php
 
-namespace SanwoHQ\Laravel;
+namespace Sanwo\Laravel;
 
 class SanwoManager
 {

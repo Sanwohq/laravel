@@ -1,9 +1,9 @@
 <?php
 
-namespace SanwoHQ\Laravel\View\Components;
+namespace Sanwo\Laravel\View\Components;
 
 use Illuminate\View\Component;
-use SanwoHQ\Laravel\SanwoManager;
+use Sanwo\Laravel\SanwoManager;
 
 class CustomAmount extends Component
 {
